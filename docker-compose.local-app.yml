@@ -1,0 +1,14 @@
+services:
+  app:
+    image: cloud_run
+    restart: "no"
+    container_name: cloud_run
+    environment:
+      PG_HOST: host.docker.internal
+      PG_PORT: 5432
+      PG_USER: index_app
+      PG_PASSWORD: index_app
+      PG_DATABASE: index
+      AUTH_SECRET: secret123
+    ports:
+      - 3001:3000

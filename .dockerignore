@@ -1,0 +1,11 @@
+Dockerfile
+.dockerignore
+node_modules
+npm-debug.log
+dist
+
+# local postgress data
+pg_data
+
+# dotenv environment variables
+.env
